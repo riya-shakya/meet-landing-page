@@ -12,18 +12,28 @@
     />
     <link rel="stylesheet" href="./global.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Frontend Mentor | Meet landing page</title>
   </head>
   <body>
     <main class="landing-page">
-      <div>
-        <img src="./starter-code/assets/logo.svg" alt="Logo" /><span>meet</span>
-      </div>
+      <img src="./starter-code/assets/logo.svg" alt="Logo" class="logo" />
       <section class="hero">
         <img
           src="./starter-code/assets/desktop/image-hero-left.png"
           alt="profile images"
-          class="hero__img"
+          class="hero__img hero__img--left"
+        />
+        <img
+          src="./starter-code/assets/tablet/image-hero.png"
+          alt="profile images"
+          class="hero__img hero__img--center"
         />
         <div class="hero__text-container">
           <h1 class="hero__heading">Group Chat for Everyone</h1>
@@ -32,18 +42,22 @@
             collaborate across any device.
           </p>
           <div class="hero__actions">
-            <button class="landing-page__btn hero__btn hero__btn--primary">
-              Download v1.3
+            <button
+              class="landing-page__btn hero__btn landing-page__btn--primary"
+            >
+              <span>Download</span> v1.3
             </button>
-            <button class="landing-page__btn hero__btn hero__btn--secondary">
-              What is it?
+            <button
+              class="landing-page__btn hero__btn landing-page__btn--secondary"
+            >
+              <span>What is it?</span>
             </button>
           </div>
         </div>
         <img
           src="./starter-code/assets/desktop/image-hero-right.png"
           alt="profile images"
-          class="hero__img"
+          class="hero__img hero__img--right"
         />
       </section>
       <section class="features">
@@ -70,10 +84,12 @@
           />
         </div>
         <div class="features__text">
-          <h3 class="features__heading--secondary">Built for modern use</h3>
-          <h2 class="features__heading--primary">
-            Smarter meetings, all in one place
-          </h2>
+          <div class="features__heading">
+            <h3 class="features__secondary-heading">Built for modern use</h3>
+            <h2 class="features__primary-heading">
+              Smarter meetings, all in one place
+            </h2>
+          </div>
           <p class="features__description">
             Send messages, share files, show your screen, and record your
             meetings — all in one workspace. Control who can join with
@@ -87,13 +103,19 @@
         <div class="section__number--vertical-line"></div>
         <div class="section__number--circle"><span class>02</span></div>
       </div>
-      <div class="footer__content">
-        <h2 class="footer__heading">Experience more together</h2>
-        <p class="footer__description">
-          Stay connected with reliable HD meetings and unlimited one-on-one and
-          group video sessions.
-        </p>
-        <button class="landing-page__btn">Download v1.3</button>
+      <div class="footer__background">
+        <div class="footer__content">
+          <h2 class="footer__heading">Experience more together</h2>
+          <p class="footer__description">
+            Stay connected with reliable HD meetings and unlimited one-on-one
+            and group video sessions.
+          </p>
+          <button
+            class="landing-page__btn landing-page__btn--secondary footer__btn"
+          >
+            <span>Download</span> v1.3
+          </button>
+        </div>
       </div>
     </footer>
   </body>
