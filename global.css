@@ -11,7 +11,7 @@
   --text-color: hsl(240, 10%, 57%);
   --section-line-color: hsl(240, 18%, 85%);
   --text-color-white: hsl(0, 0%, 98%);
-  --font-size: 16px;
+  --font-size: 1rem;
   --font-family: "Red Hat Display", sans-serif;
   --height-section-circle: 56px;
 }
@@ -100,6 +100,10 @@ body {
   filter: brightness(1.4);
 }
 
+.landing-page__btn:focus-visible {
+  outline: 1px solid hsl(240, 21%, 20%);
+}
+
 .landing-page__btn span {
   font-weight: 800;
   color: var(--text-color-white);
@@ -171,6 +175,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  color: var(--heading-color);
 }
 
 .features__secondary-heading {
